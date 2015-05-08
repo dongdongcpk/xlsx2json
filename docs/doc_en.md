@@ -4,6 +4,7 @@ xlsx2json document
 > Can be used on windows & *nix.
 
 ### Quick Start
+* config `nodejs` environment.
 * setup config files `config.json`
 
 ```json
@@ -64,6 +65,7 @@ Result：
 * number
 * boolean
 * string
+* date
 * object
 * number-array
 * boolean-array
@@ -74,6 +76,7 @@ Result：
 * string：`column_name#string`
 * number：`column_name#number`
 * bool：`column_name#bool`
+* date:`column_name#date`.formate:`YYYY/M/D H:m:s` or `YYYY/M/D` or `YYYY-M-D H:m:s` or `YYYY-M-D`.（attention：xlsx column type must be text，if date type will cause some error for now）.
 * basic type (string,number,bool):we can also leave it blank(automake type aware).
 * number/boolean/string array：`column_name#[]`
 * object：`column_name#{}`
